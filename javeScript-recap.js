@@ -132,3 +132,110 @@ console.log(a === b); */
 
 // var str = "amr sonar bangla ami tomay valobashi";
 // console.log(str.split(''));
+
+
+// Number and it's method.
+
+// var x = "Hasan";
+// var x = "100";
+// console.log(x);
+// console.log(Number(x));
+
+// var x = 10;
+// var y = Number("100")
+// console.log(y);
+
+// var z = 100;
+// var a = z.toString()
+// console.log(z);
+// console.log(a);
+
+// var x = 45.235525252;
+// console.log(x.toFixed(4));
+
+// var y = 12.34215225;
+// console.log(y);
+// y = y.toPrecision(4)
+// console.log(y);
+
+// var num = "12"
+// var num = 12.3421525;
+// var num = 12.3421525
+// console.log(parseInt(num));
+// console.log(parseFloat(num));
+
+// console.log(Number.MAX_VALUE);
+// console.log(Number.MIN_VALUE);
+
+
+// Math and its properties and methods.
+// console.log(Math.PI.toFixed(4));
+
+// var x = 2.5;
+// console.log(Math.round(x));
+// var x = -120;
+// console.log(Math.abs(x));
+
+// var x = 20.1234;
+// console.log(Math.floor(x));
+// var x = 20.1234;
+// console.log(Math.ceil(x));
+
+// console.log(Math.pow(5, 2));
+// console.log(Math.sqrt(81));
+
+// console.log(Math.max(12, 85, 854, 14, 24, 25, 14, 2))
+// console.log(Math.min(12, 85, 854, 14, 24, 25, 14, 2))
+
+// console.log(Math.ceil((Math.random().toFixed(1)) * 10));
+
+// var myArray = [50, 45, 25, 241, 24, 275, 24];
+// var arr = ["banana", "apple"]
+// var arr = Array(50, 45, 45, 241, 24, 24, 24);
+
+// console.log(myArray);
+// console.log(myArray[2]);
+// myArray[2] = 210;
+// console.log(myArray);
+// myArray.push(500)
+// myArray.unshift(100)
+// myArray.pop()
+// myArray.shift()
+// console.log(myArray);
+// console.log(myArray.length);
+// myArray.forEach(element => {
+//     console.log(element);
+// });
+// console.log(myArray.concat(arr));
+
+// console.log(myArray.indexOf(275));
+// console.log(myArray.indexOf(100));
+
+// console.log(arr.sort());
+
+
+function totalSales(cart) {
+    let totalPrice = 0;
+    for (const product of cart) {
+        const productPrice = product.Price * product.Quantity;
+        totalPrice = totalPrice + productPrice;
+    }
+    return totalPrice;
+}
+const output = totalSales([{
+        Name: 'T-Shirt',
+        Price: 100,
+        Quantity: 10
+    },
+    {
+        Name: 'Pant',
+        Price: 200,
+        Quantity: 5
+    },
+    {
+        Name: 'Shoes',
+        Price: 500,
+        Quantity: 2
+    }
+])
+console.log(output);
